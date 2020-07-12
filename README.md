@@ -1,4 +1,5 @@
 # me
+![CI](https://github.com/mariehmai/me/workflows/CI/badge.svg)
 
 ## Project setup
 ```
