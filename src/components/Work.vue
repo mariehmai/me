@@ -8,7 +8,13 @@
         :key="key"
       >
         <v-card class="card" :elevation="hover ? 8 : 4">
-          <v-img class="preview" :src="work.preview" />
+          <v-img>
+            <div class="card-header">
+              <div :id="work.anim1" />
+              <div :id="work.anim2" />
+            </div>
+          </v-img>
+
           <v-card-title>
             <span class="flex">
               <a class="title" :href="work.link" target="_blank">
@@ -35,21 +41,27 @@ const works = [
     link: 'https://lyrichords.xyz/',
     description: 'VueJS app to visualise and manage songs list',
     preview: require('@/assets/lyrichords.png'),
-    github: 'https://github.com/mariehmai/lyrichords'
+    github: 'https://github.com/mariehmai/lyrichords',
+    anim1: 'square',
+    anim2: 'circle'
   },
   {
     name: 'HelpMe',
     link: 'https://helpmemh.netlify.app/',
     description: 'VueJS app to get basic emergency numbers',
     preview: require('@/assets/helpme.png'),
-    github: 'https://github.com/mariehmai/helpme'
+    github: 'https://github.com/mariehmai/helpme',
+    anim1: 'rectangle',
+    anim2: 'triangle'
   },
   {
     name: 'Français Utile',
     link: 'https://francais-utile.netlify.app/',
     description: 'Documentation to get French basics built with Docusaurus',
     preview: require('@/assets/fr-utile.png'),
-    github: 'https://github.com/mariehmai/francais-utile'
+    github: 'https://github.com/mariehmai/francais-utile',
+    anim1: 'circle2',
+    anim2: 'oval'
   }
 ]
 
@@ -63,6 +75,121 @@ export default {
 </script>
 
 <style scoped>
+.card-header {
+  height: 120px;
+}
+
+#square {
+  position: absolute;
+  opacity: 90%;
+  top: -20px;
+  left: -20px;
+  width: 140px;
+  height: 140px;
+  background: #ff5f6d;
+  transform: rotate(80deg);
+  transition: transform 1s, width 1s, height 1s;
+}
+
+.card:hover #square {
+  transform: rotate(85deg);
+  width: 140px;
+  height: 140px;
+}
+
+#circle {
+  position: absolute;
+  opacity: 90%;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: -50px;
+  background: #ffc371;
+  border-radius: 50%;
+  transition: transform 1s, width 1s, height 1s, top 1s, left 1s;
+}
+
+.card:hover #circle {
+  width: 220px;
+  height: 220px;
+  top: -120px;
+  left: -10px;
+}
+
+#rectangle {
+  position: absolute;
+  opacity: 70%;
+  top: -20px;
+  left: -20px;
+  width: 190px;
+  height: 150px;
+  background: #8e44ad;
+  transform: rotate(30deg);
+  transition: transform 1s, width 1s, height 1s;
+}
+
+.card:hover #rectangle {
+  transform: rotate(85deg);
+  width: 140px;
+  height: 140px;
+}
+
+#triangle {
+  position: absolute;
+  opacity: 80%;
+  top: -45px;
+  left: -20px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 150px solid #c0392b;
+  transform: rotate(90deg);
+  transition: transform 1s, border 1s;
+}
+
+.card:hover #triangle {
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  transform: rotate(50deg);
+}
+
+#oval {
+  position: absolute;
+  opacity: 90%;
+  width: 170px;
+  height: 260px;
+  top: -100px;
+  left: -50px;
+  background: #02aab0;
+  border-radius: 50%;
+  transition: transform 1s, width 1s, height 1s, top 1s, left 1s;
+}
+
+.card:hover #oval {
+  width: 220px;
+  height: 220px;
+  top: -120px;
+  left: 30px;
+}
+
+#circle2 {
+  position: absolute;
+  opacity: 90%;
+  width: 220px;
+  height: 220px;
+  top: -100px;
+  left: -10px;
+  background: #00cdac;
+  border-radius: 50%;
+  transition: transform 1s, width 1s, height 1s, top 1s, left 1s;
+}
+
+.card:hover #circle2 {
+  width: 220px;
+  height: 220px;
+  top: -120px;
+  left: -30px;
+}
+
 .flex {
   display: flex;
   justify-content: flex-start;
@@ -84,7 +211,7 @@ export default {
 }
 
 .card {
-  max-width: 90vw;
+  max-width: 250px;
 }
 
 .v-card-title {

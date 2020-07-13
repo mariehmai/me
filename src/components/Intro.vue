@@ -1,7 +1,8 @@
 <template>
   <div class="intro">
     <v-container>
-      <h1 class="mb-10">Hi, I'm Marie-Hélène, Full Stack Developer ✌️</h1>
+      <h1>Hi, I'm Marie-Hélène,</h1>
+      <h1 class="mb-10">Full Stack Developer ✌️</h1>
       <v-btn outlined color="inverted" @click="scrollToBottom"
         >Contact me</v-btn
       >
