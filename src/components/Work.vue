@@ -81,7 +81,7 @@ export default {
 
 #square {
   position: absolute;
-  opacity: 90%;
+  opacity: 0.9;
   top: -20px;
   left: -20px;
   width: 140px;
@@ -99,7 +99,7 @@ export default {
 
 #circle {
   position: absolute;
-  opacity: 90%;
+  opacity: 0.9;
   width: 200px;
   height: 200px;
   top: -100px;
@@ -118,7 +118,7 @@ export default {
 
 #rectangle {
   position: absolute;
-  opacity: 70%;
+  opacity: 0.7;
   top: -20px;
   left: -20px;
   width: 190px;
@@ -136,7 +136,7 @@ export default {
 
 #triangle {
   position: absolute;
-  opacity: 80%;
+  opacity: 0.8;
   top: -45px;
   left: -20px;
   border-left: 100px solid transparent;
@@ -154,7 +154,7 @@ export default {
 
 #oval {
   position: absolute;
-  opacity: 90%;
+  opacity: 0.9;
   width: 170px;
   height: 260px;
   top: -100px;
@@ -173,7 +173,7 @@ export default {
 
 #circle2 {
   position: absolute;
-  opacity: 90%;
+  opacity: 0.9;
   width: 220px;
   height: 220px;
   top: -100px;
