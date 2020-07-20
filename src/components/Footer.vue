@@ -20,5 +20,11 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
+
+<style scoped>
+span.text-caption {
+  font-family: "Raleway", sans-serif !important;
+}
+</style>
