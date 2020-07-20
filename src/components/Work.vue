@@ -2,11 +2,7 @@
   <v-container class="work">
     <h1 class="mb-10">My work</h1>
     <div class="card-container">
-      <v-hover
-        v-slot:default="{ hover }"
-        v-for="(work, key) in works"
-        :key="key"
-      >
+      <v-hover v-slot:default="{ hover }" v-for="(work, key) in works" :key="key">
         <v-card class="card" :elevation="hover ? 8 : 4">
           <v-img>
             <div class="card-header">
@@ -17,9 +13,7 @@
 
           <v-card-title>
             <span class="flex">
-              <a class="title" :href="work.link" target="_blank">
-                {{ work.name }}
-              </a>
+              <a class="title" :href="work.link" target="_blank">{{ work.name }}</a>
               <a :href="work.github" target="_blank">
                 <v-btn icon>
                   <font-awesome-icon :icon="['fab', 'github']" />
@@ -37,41 +31,41 @@
 <script>
 const works = [
   {
-    name: 'Lyrichords',
-    link: 'https://lyrichords.xyz/',
-    description: 'VueJS app to visualise and manage songs list',
-    preview: require('@/assets/lyrichords.png'),
-    github: 'https://github.com/mariehmai/lyrichords',
-    anim1: 'square',
-    anim2: 'circle'
+    name: "Lyrichords",
+    link: "https://lyrichords.xyz/",
+    description: "VueJS app to visualise and manage songs list",
+    preview: require("@/assets/lyrichords.png"),
+    github: "https://github.com/mariehmai/lyrichords",
+    anim1: "square",
+    anim2: "circle"
   },
   {
-    name: 'HelpMe',
-    link: 'https://helpmemh.netlify.app/',
-    description: 'VueJS app to get basic emergency numbers',
-    preview: require('@/assets/helpme.png'),
-    github: 'https://github.com/mariehmai/helpme',
-    anim1: 'rectangle',
-    anim2: 'triangle'
+    name: "HelpMe",
+    link: "https://helpmemh.netlify.app/",
+    description: "VueJS app to get basic emergency numbers",
+    preview: require("@/assets/helpme.png"),
+    github: "https://github.com/mariehmai/helpme",
+    anim1: "rectangle",
+    anim2: "triangle"
   },
   {
-    name: 'Français Utile',
-    link: 'https://francais-utile.netlify.app/',
-    description: 'Documentation to get French basics built with Docusaurus',
-    preview: require('@/assets/fr-utile.png'),
-    github: 'https://github.com/mariehmai/francais-utile',
-    anim1: 'circle2',
-    anim2: 'oval'
+    name: "Français Utile",
+    link: "https://francais-utile.netlify.app/",
+    description: "Documentation to get French basics built with Docusaurus",
+    preview: require("@/assets/fr-utile.png"),
+    github: "https://github.com/mariehmai/francais-utile",
+    anim1: "circle2",
+    anim2: "oval"
   }
-]
+];
 
 export default {
   data() {
     return {
       works
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
@@ -123,13 +117,13 @@ export default {
   left: -20px;
   width: 190px;
   height: 150px;
-  background: #8e44ad;
+  background: #ffdde1;
   transform: rotate(30deg);
   transition: transform 1s, width 1s, height 1s;
 }
 
 .card:hover #rectangle {
-  transform: rotate(85deg);
+  transform: rotate(55deg);
   width: 140px;
   height: 140px;
 }
@@ -141,7 +135,7 @@ export default {
   left: -20px;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
-  border-top: 150px solid #c0392b;
+  border-top: 150px solid #ee9ca7;
   transform: rotate(90deg);
   transition: transform 1s, border 1s;
 }
@@ -149,43 +143,43 @@ export default {
 .card:hover #triangle {
   border-left: 120px solid transparent;
   border-right: 120px solid transparent;
-  transform: rotate(50deg);
+  transform: rotate(70deg);
 }
 
 #oval {
   position: absolute;
-  opacity: 0.9;
-  width: 170px;
-  height: 260px;
+  opacity: 0.7;
+  width: 190px;
+  height: 200px;
   top: -100px;
-  left: -50px;
-  background: #02aab0;
+  left: -15px;
+  background: #076585;
   border-radius: 50%;
-  transition: transform 1s, width 1s, height 1s, top 1s, left 1s;
+  transition: transform 1s, width 1s, height 1s, top 1s, left 2s;
 }
 
 .card:hover #oval {
-  width: 220px;
-  height: 220px;
-  top: -120px;
-  left: 30px;
+  width: 200px;
+  height: 200px;
+  top: -95px;
+  left: 50px;
 }
 
 #circle2 {
   position: absolute;
   opacity: 0.9;
   width: 220px;
-  height: 220px;
+  height: 180px;
   top: -100px;
   left: -10px;
-  background: #00cdac;
+  background: #a0bac7;
   border-radius: 50%;
   transition: transform 1s, width 1s, height 1s, top 1s, left 1s;
 }
 
 .card:hover #circle2 {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   top: -120px;
   left: -30px;
 }
@@ -227,6 +221,7 @@ export default {
 
 .title {
   text-decoration: none;
+  font-family: "Raleway", sans-serif !important;
 }
 
 .title:hover {
