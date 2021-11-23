@@ -1,29 +1,29 @@
 # [me](mariehmai.me)
 
-![CI](https://github.com/mariehmai/me/workflows/CI/badge.svg)
+![GH Actions](https://github.com/mariehmai/me/actions/workflows/actions.yml/badge.svg)
 
 ## Project setup
 
 ```
-npm run install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 
 ```
-npm run build
+yarn build
 ```
 
 ### Lints and fixes files
 
 ```
-npm run lint
+yarn lint
 ```
 
 ### Customize configuration
