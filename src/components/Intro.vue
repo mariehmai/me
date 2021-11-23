@@ -9,24 +9,18 @@
 
       <v-container class="animation-wrapper">
         <v-hover v-slot:default="{ hover }">
-          <transition name="fade" mode="out-in">
             <img v-if="hover" key="c1" class="rotate" :src="colombia" width="50" />
             <img v-else key="c2" class="rotate" :src="colombiaInverted" width="50" />
-          </transition>
         </v-hover>
         <img :src="code" width="30" />
         <v-hover v-slot:default="{ hover }">
-          <transition name="fade" mode="out-in">
             <img v-if="hover" key="w1" class="rotate" :src="waffle" width="40" />
             <img v-else key="w2" class="rotate" :src="waffleInverted" width="40" />
-          </transition>
         </v-hover>
         <img class="rotate" :src="racket" width="50" />
         <v-hover v-slot:default="{ hover }">
-          <transition name="fade" mode="out-in">
             <img v-if="hover" key="v1" class="rotate" :src="vietnam" width="45" />
             <img v-else key="v2" class="rotate" :src="vietnamInverted" width="45" />
-          </transition>
         </v-hover>
       </v-container>
     </v-container>
