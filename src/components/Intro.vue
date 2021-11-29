@@ -72,7 +72,7 @@ h1 {
 }
 
 .intro-wrapper {
-  background: linear-gradient(90deg, #8e9eab 0%, #eef2f3 100%);
+  background: #232526;
   color: whitesmoke;
 }
 
@@ -100,15 +100,6 @@ h1 {
 
 .rotate {
   transform: rotate(30deg);
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0.5;
 }
 
 @media screen and (min-width: 754px) {

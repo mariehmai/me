@@ -1,6 +1,6 @@
 <template>
   <v-container class="work">
-    <h1 class="mb-10">My work</h1>
+    <h1 class="mb-10">Side Projects</h1>
     <div class="card-container">
       <v-hover v-slot:default="{ hover }" v-for="(work, key) in works" :key="key">
         <v-card class="card" :elevation="hover ? 8 : 4">
@@ -205,7 +205,8 @@ export default {
 }
 
 .card {
-  max-width: 250px;
+  width: 100%;
+  height: 240px;
 }
 
 .v-card-title {
@@ -230,5 +231,11 @@ export default {
 
 .preview {
   object-fit: scale-down;
+}
+
+@media screen and (min-width: 754px) {
+  .card {
+    width: 350px;
+  }
 }
 </style>
