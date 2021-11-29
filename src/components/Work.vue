@@ -220,6 +220,10 @@ export default {
   margin: 1rem 1rem;
 }
 
+.v-sheet.v-card {
+  border-radius: 8px;
+}
+
 .title {
   text-decoration: none;
   font-family: "Raleway", sans-serif !important;
