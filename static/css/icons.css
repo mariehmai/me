@@ -1,0 +1,31 @@
+#hobbies img {
+  transition: transform .7s ease-in-out;
+}
+
+#hobbies .xs {
+  width: 50px;
+}
+#hobbies .sm {
+  width: 65px;
+}
+#hobbies .lg {
+  width: 70px;
+}
+
+#climbing {
+  transform: rotate(12deg);
+}
+#climbing:hover {
+  transition: .5s;
+  transform: rotate(25deg) translate(-5px, -15px);
+  opacity: .8;
+}
+
+#vietnam {
+  transform: rotate(20deg);
+}
+#vietnam:hover {
+  transition: .5s;
+  transform: rotate(40deg) translate(-10px);
+  opacity: .8;
+}
