@@ -70,6 +70,14 @@ a.social-link {
   border-bottom: none;
 }
 
+.social-icon {
+  font-size: 1em;
+}
+.social-icon.md {
+  font-size: 1.75em;
+}
+
+
 .intro h3 {
   margin: 0.5rem 0;
   font-size: 25px;
@@ -85,11 +93,6 @@ a.social-link {
 
 .patterns {
   margin-top: 1rem;
-}
-
-.github-icon {
-  width: 0.75em;
-  margin-right: 0;
 }
 
 @media screen and (max-width: 45em) {

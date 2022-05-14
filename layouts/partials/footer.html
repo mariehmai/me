@@ -1,22 +1,19 @@
 <footer role="contentinfo">
   <div class="social-links">
     <a href="https://github.com/mariehmai" class="social-link" target="_blank" rel="noopener">
-      <img
-        src="{{ "images/github.svg" | relURL }}"
-        alt="Github link"
-      >
+      <svg class="social-icon md" aria-hidden="true" focusable="false">
+        <use xlink:href="#github"></use>
+      </svg>
     </a>
     <a href="https://www.linkedin.com/in/mariehmai" class="social-link" target="_blank" rel="noopener">
-      <img
-        src="{{ "images/linkedin.svg" | relURL }}"
-        alt="LinkedIn link"
-      >
+      <svg class="social-icon md" aria-hidden="true" focusable="false">
+        <use xlink:href="#linkedin"></use>
+      </svg>
     </a>
     <a href="mailto:mai.mariehelene@gmail.com" class="social-link" target="_blank" rel="noopener">
-      <img
-        src="{{ "images/email.svg" | relURL }}"
-        alt="Email redirect"
-      >
+      <svg class="social-icon md" aria-hidden="true" focusable="false">
+        <use xlink:href="#email"></use>
+      </svg>
     </a>
   </div>
   {{ with .Site.Params.footer }}
