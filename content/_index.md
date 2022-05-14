@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-Hi, I'm **Marie-Hélène**, Full Stack Software Engineer.
+{{< typing >}}
 
 <img src="images/climbing.svg" width="70" style="margin-right: 16px; transform: rotate(12deg);" />
 <img src="images/colombia.svg" width="70" style="margin-right: 16px;" />

@@ -31,9 +31,8 @@ params:
   logoAlt: An alternative text description of the logo
   customCss:
     - css/global.css
-  # customJs:
-  #   - js/custom_01.js
-  #   - js/custom_02.js
+  customJs:
+    - js/type_writer.js
 
 menu:
   nav:
