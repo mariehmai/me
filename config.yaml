@@ -15,7 +15,7 @@ imaging:
   quality: 99
 
 params:
-  # description: Hi, I'm Marie-Hélène Mai, Full Stack Software Engineer.
+  # description: Marie-Hélène Mai, Full Stack Software Engineer.
   homeMetaContent: My personal website using Hugo theme.
   footer: © 2022 Marie-Hélène Mai
   # For more date formats see https://gohugo.io/functions/format/
@@ -27,14 +27,13 @@ params:
   showThemeSwitcher: true
   defaultDarkTheme: false
   moveFooterToHeader: true
-  # navTitleText: Cupper Theme
+  # navTitleText: Marie-Hélène Mai
   logoAlt: An alternative text description of the logo
   customCss:
-    - css/custom_01.css
-    - css/custom_02.css
-  customJs:
-    - js/custom_01.js
-    - js/custom_02.js
+    - css/global.css
+  # customJs:
+  #   - js/custom_01.js
+  #   - js/custom_02.js
 
 menu:
   nav:
