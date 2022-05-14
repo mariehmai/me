@@ -29,6 +29,10 @@ h2 {
   border-radius: 2px;
 }
 
+.intro-and-nav {
+  border-right: 1px solid;
+}
+
 .social-links {
   display: flex;
   flex-direction: row;
