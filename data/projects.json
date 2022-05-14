@@ -10,21 +10,24 @@
       "date": "2019-09-28T12:00:00-00:00",
       "description": "An app to visualise song lyrics and chords, built with VueJS.",
       "link": "https://www.lyrichords.xyz/",
-      "github": "https://github.com/mariehmai/lyrichords"
+      "github": "https://github.com/mariehmai/lyrichords",
+      "tags": ["app", "vuejs"]
     },
     {
       "title": "HelpMe",
       "date": "2022-04-20T12:00:00-00:00",
       "description": "An app to get basic emergency numbers, built with VueJS.",
       "link": "https://helpmemh.netlify.app/",
-      "github": "https://github.com/mariehmai/helpme"
+      "github": "https://github.com/mariehmai/helpme",
+      "tags": ["app", "vuejs"]
     },
     {
       "title": "Français Utile",
       "date": "2018-01-02T12:00:00-00:00",
       "description": "A documentation to learn French language basics, built with Docusaurus.",
       "link": "https://francais-utile.netlify.app/",
-      "github": "https://github.com/mariehmai/francais-utile"
+      "github": "https://github.com/mariehmai/francais-utile",
+      "tags": ["doc", "react"]
     }
   ]
 }

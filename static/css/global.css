@@ -91,6 +91,10 @@ a.social-link {
   font-size: 1.75em;
 }
 
+.tag {
+  font-size: 0.75em;
+  font-weight: 600;
+}
 
 .intro h3 {
   font-size: 25px;
