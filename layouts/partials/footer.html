@@ -2,7 +2,7 @@
   <div
   {{ if eq .Site.Params.showThemeSwitcher false }}style="display: none;"{{ end }}
   >
-    <label for="themer">
+    <label for="themer" style="cursor: pointer;">
       {{ T "dark_theme" }} <input type="checkbox" id="themer" class="vh">
       <!-- Shows "on" or "off" -->
       <span aria-hidden="true"></span>
@@ -12,19 +12,19 @@
     <a href="https://github.com/mariehmai" class="social-link" target="_blank" rel="noopener">
       <img
         src="{{ "images/github.svg" | relURL }}"
-        alt="Github Logo"
+        alt="Github link"
       >
     </a>
     <a href="https://www.linkedin.com/in/mariehmai" class="social-link" target="_blank" rel="noopener">
       <img
         src="{{ "images/linkedin.svg" | relURL }}"
-        alt="LinkedIn Logo"
+        alt="LinkedIn link"
       >
     </a>
     <a href="mailto:mai.mariehelene@gmail.com" class="social-link" target="_blank" rel="noopener">
       <img
         src="{{ "images/email.svg" | relURL }}"
-        alt="LinkedIn Logo"
+        alt="Email redirect"
       >
     </a>
   </div>
