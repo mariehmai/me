@@ -17,6 +17,21 @@ h2 {
   font-weight: 600
 }
 
+section,
+h1,
+#search,
+.tags {
+  margin-bottom: 2rem;
+}
+
+.h2-container {
+  margin-bottom: 1.5rem;
+}
+
+* + * {
+  margin-top: 0;
+}
+
 #search {
   border-radius: 8px;
 }
@@ -57,7 +72,6 @@ h2 {
 
 .social-link {
   padding: 0;
-  margin: 0;
   background: none;
   cursor: pointer;
 }
@@ -79,12 +93,12 @@ a.social-link {
 
 
 .intro h3 {
-  margin: 0.5rem 0;
   font-size: 25px;
 }
 
 .intro h4 {
   margin: 0.5rem 0;
+  font-weight: 600;
 }
 
 [role="contentinfo"] {
