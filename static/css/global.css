@@ -38,7 +38,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0.25rem 0;
+  margin: 1rem 0 0.25rem 0;
 }
 
 .social-links :not(:last-child) {
@@ -75,4 +75,10 @@ a.social-link {
 
 .patterns {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 45em) {
+  .intro-and-nav {
+    border-right: none;
+  }
 }

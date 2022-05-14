@@ -1,6 +1,21 @@
 <header class="intro-and-nav" role="banner">
   <div>
     <div class="intro">
+      <div
+      {{ if eq .Site.Params.showThemeSwitcher false }}style="display: none;"{{ end }}
+      style="display: flex; justify-content: flex-end; align-items: center;"
+      >
+        <label for="themer" style="cursor: pointer; display: flex; align-items: center; width:fit-content; margin: 0 0 0.5rem 0;">
+          <img
+            src="{{ "images/moon.svg" | relURL }}"
+            alt="Dark theme"
+            width="20"
+          >
+          <input type="checkbox" id="themer" class="vh">
+          <!-- Shows "on" or "off" -->
+          <span style="margin-top: 0; margin-left: 0.25rem;" aria-hidden="true"></span>
+        </label>
+      </div>
       <a
         class="logo"
         href="{{ .Site.BaseURL }}"
