@@ -1,0 +1,34 @@
+<footer role="contentinfo">
+  <div
+  {{ if eq .Site.Params.showThemeSwitcher false }}style="display: none;"{{ end }}
+  >
+    <label for="themer">
+      {{ T "dark_theme" }} <input type="checkbox" id="themer" class="vh">
+      <!-- Shows "on" or "off" -->
+      <span aria-hidden="true"></span>
+    </label>
+  </div>
+  <div class="social-links">
+    <a href="https://github.com/mariehmai" class="social-link" target="_blank" rel="noopener">
+      <img
+        src="{{ "images/github.svg" | relURL }}"
+        alt="Github Logo"
+      >
+    </a>
+    <a href="https://www.linkedin.com/in/mariehmai" class="social-link" target="_blank" rel="noopener">
+      <img
+        src="{{ "images/linkedin.svg" | relURL }}"
+        alt="LinkedIn Logo"
+      >
+    </a>
+    <a href="mailto:mai.mariehelene@gmail.com" class="social-link" target="_blank" rel="noopener">
+      <img
+        src="{{ "images/email.svg" | relURL }}"
+        alt="LinkedIn Logo"
+      >
+    </a>
+  </div>
+  {{ with .Site.Params.footer }}
+    {{ . | markdownify }}
+  {{ end }}
+</footer>

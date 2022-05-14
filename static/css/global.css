@@ -38,7 +38,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin: 0.25rem 0;
 }
 
 .social-links :not(:last-child) {
@@ -61,8 +61,8 @@ a.social-link {
 }
 
 .intro h3 {
-  margin: 1rem 0;
-  font-size: 23px;
+  margin: 0.5rem 0;
+  font-size: 25px;
 }
 
 .intro h4 {
