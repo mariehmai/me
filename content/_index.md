@@ -10,3 +10,7 @@ Hi, I'm **Marie-Hélène**, Full Stack Software Engineer.
 <img src="images/waffle.svg" width="60" style="margin-right: 16px; transform: rotate(10deg);" />
 <img src="images/racket.svg" width="65" style="margin-right: 16px; transform: rotate(20deg);" />
 <img src="images/vietnam.svg" width="60" style="transform: rotate(30deg);" />
+
+## Side Projects
+
+{{< projects include="Lyrichords, HelpMe, Français Utile" descriptions="true" >}}

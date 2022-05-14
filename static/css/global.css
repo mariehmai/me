@@ -33,6 +33,16 @@ h2 {
   border-right: 1px solid;
 }
 
+.projects p {
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}
+.projects.with-desc > li + li {
+  border-top: 1px solid;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+}
+
 .social-links {
   display: flex;
   flex-direction: row;
@@ -75,6 +85,11 @@ a.social-link {
 
 .patterns {
   margin-top: 1rem;
+}
+
+.github-icon {
+  width: 0.75em;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 45em) {

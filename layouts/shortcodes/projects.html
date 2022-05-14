@@ -1,0 +1,23 @@
+{{ $JSON := $.Site.Data.projects }}
+{{ $included := replace (.Get "include") ", " "," }}
+{{ $included := apply (split $included ",") "lower" "." }}
+{{ $descriptions := .Get "descriptions" }}
+<ul class="projects {{ if and ($descriptions) (ne $descriptions "false") }}with-desc{{ end }}">
+  {{ range $JSON.projects }}
+    {{ if in $included (lower .title) }}
+      <li>
+        <strong>
+          <a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>
+          <a style="border: none;" href="{{ .github }}" target="_blank" rel="noopener">
+            <svg class="github-icon" aria-hidden="true" focusable="false">
+              <use xlink:href="#github"></use>
+            </svg>
+          </a>
+        </strong>
+        {{ if and ($descriptions) (ne $descriptions "false") }}
+          <p>{{ .description }}</p>
+        {{ end }}
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
