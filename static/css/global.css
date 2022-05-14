@@ -21,7 +21,6 @@
   width: 28px;
 }
 
-
 a.social-link {
   border-bottom: none;
 }
@@ -33,4 +32,12 @@ a.social-link {
 
 .intro h4 {
   margin: 0.5rem 0;
+}
+
+[role="contentinfo"] {
+  margin-top: 0;
+}
+
+.patterns {
+  margin-top: 1rem;
 }
