@@ -11,7 +11,7 @@
       "description": "An app to visualise song lyrics and chords, built with VueJS.",
       "link": "https://www.lyrichords.xyz/",
       "github": "https://github.com/mariehmai/lyrichords-vuejs",
-      "tags": ["app", "vuejs"]
+      "tags": ["app", "nextjs", "tailwindcss", "typescript"]
     },
     {
       "title": "HelpMe",
@@ -27,7 +27,7 @@
       "description": "A documentation to learn French language basics, built with Docusaurus.",
       "link": "https://francais-utile.netlify.app/",
       "github": "https://github.com/mariehmai/francais-utile",
-      "tags": ["doc", "react"]
+      "tags": ["doc", "docusaurus", "reactjs"]
     }
   ]
 }
