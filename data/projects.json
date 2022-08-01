@@ -25,7 +25,7 @@
       "title": "Français Utile",
       "date": "2018-01-02T12:00:00-00:00",
       "description": "A documentation to learn French language basics, built with Docusaurus.",
-      "link": "https://francais-utile-seven.vercel.app/",
+      "link": "https://francais-utile.vercel.app/",
       "github": "https://github.com/mariehmai/fr-utile",
       "tags": ["doc", "docusaurus", "reactjs"]
     }
