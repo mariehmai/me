@@ -6,5 +6,5 @@ tags: [doc, react]
 
 Documentation to learn French language basics built with Docusaurus.
 
-- <a href="https://francais-utile.netlify.app/" target="_blank" rel="noopener">App</a>
-- <a href="https://github.com/mariehmai/francais-utile" target="_blank" rel="noopener">Github</a>
+- <a href="https://francais-utile-seven.vercel.app/" target="_blank" rel="noopener">App</a>
+- <a href="https://github.com/mariehmai/fr-utile" target="_blank" rel="noopener">Github</a>
