@@ -1,7 +1,6 @@
 ---
 title: "Français Utile"
 date: 2018-01-02T12:00:00-00:00
-tags: [doc, react]
 ---
 
 Documentation to learn French language basics built with Docusaurus.
