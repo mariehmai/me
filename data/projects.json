@@ -17,7 +17,7 @@
       "title": "HelpMe",
       "date": "2022-04-20T12:00:00-00:00",
       "description": "An app to get basic emergency numbers, built with VueJS.",
-      "link": "https://helpmemh.netlify.app/",
+      "link": "https://crisishelp.netlify.app",
       "github": "https://github.com/mariehmai/helpme",
       "tags": ["app", "vuejs"]
     },
