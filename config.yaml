@@ -1,79 +1,145 @@
 baseURL: https://www.mariehmai.me/
 languageCode: en-us
-defaultContentLanguage: en
-title: Marie-Hélène Mai - Full Stack Software Engineer
-theme: cupper-hugo-theme
-enableGitInfo: true
+title: Marie-Hélène Mai
+theme: PaperMod
 
-taxonomies:
-  tag: tags
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
-permalinks:
-  side-projects: /:contentbasename/
+googleAnalytics: ""
 
-imaging:
-  quality: 99
+minify:
+  disableXML: true
+  minifyOutput: true
 
 params:
-  # description: Marie-Hélène Mai, Full Stack Software Engineer.
-  # homeMetaContent: My personal website using Hugo theme.
-  footer: © 2015-2025 Marie-Hélène Mai
-  # For more date formats see https://gohugo.io/functions/format/
-  dateFormat: Jan 2, 2006
-  codePenUser: someUser
-  katex: true
-  hideHeaderLinks: false
-  search: true
-  showThemeSwitcher: true
-  defaultDarkTheme: false
-  moveFooterToHeader: true
-  # navTitleText: Marie-Hélène Mai
-  logoAlt: An alternative text description of the logo
-  customCss:
-    - css/global.css
-    - css/icons.css
-  customJs:
-    - js/type_writer.js
+  env: production
+  title: Marie-Hélène Mai
+  description: "Full Stack Software Engineer passionate about building innovative solutions"
+  keywords:
+    [Software Engineer, Full Stack, React, Node.js, TypeScript, JavaScript]
+  author: Marie-Hélène Mai
+  images: [""]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    disableHLJS: true
+
+  label:
+    text: "Marie-Hélène Mai"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: Marie-Hélène Mai
+    subtitle: "Full Stack Software Engineer | Remote"
+    imageUrl: "/images/logo.png"
+    imageWidth: 180
+    imageHeight: 180
+    imageTitle: Marie-Hélène Mai
+    buttons:
+      - name: About
+        url: /about
+      - name: Projects
+        url: /projects
+      - name: Resume
+        url: /resume
+
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: Welcome to my digital space
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/mariehmai"
+    - name: github
+      url: "https://github.com/mariehmai"
+    - name: email
+      url: "mailto:mai.mariehelene@gmail.com"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 
 menu:
-  nav:
-    - name: Home
-      url: /
-      weight: 1
-    # - name: Side Projects
-    #   url: /side-projects/
-    #   weight: 2
-    # - name: Tags
-    #   url: /tags/
-    #   weight: 3
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 20
+    - identifier: resume
+      name: resume
+      url: /resume/
+      weight: 30
 
 markup:
-  defaultMarkdownHandler: goldmark
   goldmark:
-    extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer: true
-    parser:
-      attribute: true
-      autoHeadingID: true
     renderer:
-      hardWraps: false
       unsafe: true
-      xHTML: false
   highlight:
-    codeFences: false
-    hl_Lines: ""
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
     lineNoStart: 1
-    lineNos: false
+    lineNos: true
     lineNumbersInTable: true
-    noClasses: true
-    style: monokai
     tabWidth: 4
-  tableOfContents:
-    endLevel: 6
-    startLevel: 2
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  x:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
