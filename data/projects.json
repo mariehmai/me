@@ -1,16 +1,14 @@
 {
   "title": "Side Projects",
   "description": "<p>A list of small projects to test out different techs</p>",
-  "authors": [
-    "Marie-Hélène Mai"
-  ],
+  "authors": ["Marie-Hélène Mai"],
   "projects": [
     {
       "title": "Lyrichords",
       "date": "2019-09-28T12:00:00-00:00",
       "description": "An app to visualise song lyrics and chords, built with NextJS.",
       "link": "https://www.lyrichords.xyz/",
-      "github": "https://github.com/mariehmai/lyrichords-vuejs",
+      "github": "https://github.com/mariehmai/lyrichords",
       "tags": ["app", "nextjs", "tailwindcss", "typescript"]
     },
     {

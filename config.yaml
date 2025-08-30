@@ -17,7 +17,7 @@ imaging:
 params:
   # description: Marie-Hélène Mai, Full Stack Software Engineer.
   # homeMetaContent: My personal website using Hugo theme.
-  footer: © 2025 Marie-Hélène Mai
+  footer: © 2015-2025 Marie-Hélène Mai
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
   codePenUser: someUser
