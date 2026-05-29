@@ -26,7 +26,7 @@ An interactive app to visualise song lyrics alongside guitar chords, making it e
 
 **Tech Stack:** React, Node.js, Web APIs
 
-🔗 [Live App](https://www.lyrichords.xyz/) • 📂 [GitHub](https://github.com/mariehmai/lyrichords)
+🔗 [Live App](https://lyrichords.vercel.app/) • 📂 [GitHub](https://github.com/mariehmai/lyrichords)
 
 ---
 
